@@ -1,13 +1,20 @@
 CodaPreview
 ===========
 
-Introduction goes here.
+Panic's Coda 2 is rather dumb about how it maps on-disk filenames to preview 
+URLs--it basically just turns $LOCAL_ROOT/path into $LOCAL_URL/path.
+That doesn't work for Rails.  This plugin installs routes for app/controllers, 
+app/views, app/assets/stylesheets, and app/assets/javascripts which attempt to 
+redirect you to a reasonable preview page.
 
+To start using this, just drop it into your vendor/plugins folder.
 
-Example
-=======
+Note
+====
 
-Example goes here.
-
+I have only done the bare minimum work needed to make this work in my project.
+This is not really properly packaged yet, and I don't really know enough about 
+Rails plugins to do it properly right now.  Assistance would be greatly 
+appreciated.
 
 Copyright (c) 2012 Brent Royal-Gordon, released under the MIT license
